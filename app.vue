@@ -1,19 +1,18 @@
 <script setup>
 const version = 2 + 1
 const runtimeConfig = useRuntimeConfig()
+const appName = runtimeConfig.appName
+const appUrl = runtimeConfig.appUrl
+console.log(runtimeConfig)
 </script>
 
 <template>
   <div class="hello">
     Hello Nuxt {{ version }}!
-
-    {{  runtimeConfig  }}
-    -----------
-    {{ runtimeConfig.public }}
     <br />
-    App Name: {{ runtimeConfig.name }}
+    App Name: {{ appName }}
     <br />
-    App URL: {{ runtimeConfig.appUrl }}
+    App URL: {{ appUrl }}
   </div>
 </template>
 
