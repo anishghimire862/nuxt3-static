@@ -7,6 +7,9 @@ const runtimeConfig = useRuntimeConfig()
   <div class="hello">
     Hello Nuxt {{ version }}!
 
+    {{  runtimeConfig  }}
+    -----------
+    {{ runtimeConfig.public }}
     <br />
     App Name: {{ runtimeConfig.name }}
     <br />
